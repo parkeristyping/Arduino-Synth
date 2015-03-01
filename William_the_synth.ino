@@ -1,12 +1,13 @@
 // WILLIAM THE SYNTHESIZER 
-// By Parker Lawrence
 // 
-// Based on the Illutron synth library
+// Minor adaptation of the Illutron synth library, described at the link below:
 // http://www.instructables.com/id/Turn-your-Arduino-into-a-4-voice-wavetable-synth-w/
-//
+// 
+// Basically, I have just applied this library to a direct MIDI setup (the picture of which can be found in this folder)
+// and set it to work with an M-Audio Axiom 49 MIDI controller
 
-#include <synth.h>
-#include "MIDI_parser.h"
+#include <synth.h>        //  https://github.com/dzlonline/the_synth
+#include "MIDI_parser.h"  //  https://github.com/dzlonline/the_synth
 
 synth william;      // Make a synth
 midiParser parser;  // Make a MIDI parser
